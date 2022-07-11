@@ -1,5 +1,9 @@
 import os
 from flask import Flask
+import psycopg2
+from squlalchemy import (
+    create_engine, Table, Column, Float, ForeignKey, Integer, String, MetaData
+)
 
 
 app = Flask(__name__)
